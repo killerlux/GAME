@@ -17,5 +17,7 @@ public class Main {
         fenetre.setLocationRelativeTo(null);
         fenetre.setVisible(true);
 
+        Jeu.startThreadJeu();
+
     }
 }

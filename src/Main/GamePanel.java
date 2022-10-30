@@ -33,6 +33,10 @@ public class GamePanel extends JPanel implements Runnable{
     }
     @Override
     public void run() {
+        while(ThreadJeu!=null){
+            System.out.println("boucle de jeu");
+
+        }
 
     }
 }

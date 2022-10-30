@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f67524da-533a-468a-a9d7-89f4b9194672" name="Changes" comment="Fenêtre fonctionnelle">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main/GamePanel.java" afterDir="false" />
+    <list default="true" id="f67524da-533a-468a-a9d7-89f4b9194672" name="Changes" comment="Début de création de la boucle de jeu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667056646464</updated>
-      <workItem from="1667056647601" duration="3718000" />
+      <workItem from="1667056647601" duration="5058000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1667056826896</created>
@@ -98,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667060849175</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Début de création de la boucle de jeu">
+      <created>1667061049397</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667061049397</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +123,7 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Initialisation fenetre avec swing" />
     <MESSAGE value="Fenêtre fonctionnelle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fenêtre fonctionnelle" />
+    <MESSAGE value="Début de création de la boucle de jeu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Début de création de la boucle de jeu" />
   </component>
 </project>
