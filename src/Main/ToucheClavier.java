@@ -19,7 +19,7 @@ public class ToucheClavier implements KeyListener {// override auto les fonction
         int code = keyEvent.getKeyCode();
 
         if (code == KeyEvent.VK_Q) {
-            basActiv = true;
+            gaucheActiv = true;
         }
 
         if (code == KeyEvent.VK_D) {
@@ -41,7 +41,7 @@ public class ToucheClavier implements KeyListener {// override auto les fonction
         int code = keyEvent.getKeyCode();
 
         if (code == KeyEvent.VK_Q) {
-            basActiv = false;
+            gaucheActiv = false;
         }
 
         if (code == KeyEvent.VK_D) {

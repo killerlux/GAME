@@ -16,6 +16,11 @@ public class GamePanel extends JPanel implements Runnable{
     private final int AxeX = 14;
 
 
+    private final int FPS = 60; //images par seconde
+
+
+
+
     // Window mode
     private final int Largeur = TailleCarreauGrille * AxeY; // 864 px
     private final int Hauteur = TailleCarreauGrille * AxeX; // 576 px
@@ -48,13 +53,25 @@ public class GamePanel extends JPanel implements Runnable{
     }
     @Override
     public void run() {
+        double ecart = 1_000_000_000 / FPS; // une seconde = 1 000 000 000 nanosecondes et 1sec/60 = 1 itération de boucle de jeu
+        double x = 0;
+        long dernierTempsCapture = System.nanoTime();
+        long TempsActuel;
+        long compteur=0;
+        int compteur2=0;
+
+
         while(ThreadJeu!=null){
-            System.out.println("boucle de jeu");
+            TempsActuel= System.nanoTime();
+            x+= (TempsActuel - dernierTempsCapture) / ecart;
+            dernierTempsCapture=TempsActuel;
+            if(1<=x){
             maj();
             repaint();
-
+            x--;
         }
 
+    }
     }
     public void maj(){
         if(touche.hautActiv==true){
