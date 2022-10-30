@@ -32,7 +32,7 @@ public class GamePanel extends JPanel implements Runnable{
 
     int AxeYPersonnage=100;
 
-    int VitessePersonnage=5;
+    int VitessePersonnage=3;
 
     Thread ThreadJeu;
     public GamePanel() {
@@ -95,7 +95,7 @@ public class GamePanel extends JPanel implements Runnable{
         super.paintComponent(g);
         Graphics2D graphics2D =(Graphics2D) g;
         graphics2D.setColor(Color.red);
-        graphics2D.fillOval(AxeXPersonnage,AxeYPersonnage,TailleCareau,TailleCareau);
+        graphics2D.fillRect(AxeXPersonnage,AxeYPersonnage,TailleCareau,TailleCareau);
         graphics2D.dispose();// libère ressources utilisées
 
     }

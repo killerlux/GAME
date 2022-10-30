@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f67524da-533a-468a-a9d7-89f4b9194672" name="Changes" comment="touches de clavier début">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f67524da-533a-468a-a9d7-89f4b9194672" name="Changes" comment="Mon oval bouge !!!!">
       <change beforePath="$PROJECT_DIR$/src/Main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/GamePanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/ToucheClavier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ToucheClavier.java" afterDir="false" />
     </list>
@@ -67,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667056646464</updated>
-      <workItem from="1667056647601" duration="9826000" />
+      <workItem from="1667056647601" duration="10153000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1667056826896</created>
@@ -125,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667133240726</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Mon oval bouge !!!!">
+      <created>1667134752398</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667134752398</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +155,7 @@
     <MESSAGE value="Début de création de la boucle de jeu" />
     <MESSAGE value="boucle de jeu fonctionnelle" />
     <MESSAGE value="touches de clavier début" />
-    <option name="LAST_COMMIT_MESSAGE" value="touches de clavier début" />
+    <MESSAGE value="Mon oval bouge !!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mon oval bouge !!!!" />
   </component>
 </project>

@@ -18,19 +18,19 @@ public class ToucheClavier implements KeyListener {// override auto les fonction
     public void keyPressed(KeyEvent keyEvent) {
         int code = keyEvent.getKeyCode();
 
-        if (code == KeyEvent.VK_Q) {
+        if ((code == KeyEvent.VK_LEFT) || (code == KeyEvent.VK_Q)) {
             gaucheActiv = true;
         }
 
-        if (code == KeyEvent.VK_D) {
+        if ((code == KeyEvent.VK_RIGHT) || (code == KeyEvent.VK_D)) {
             droitActiv = true;
         }
 
-        if (code == KeyEvent.VK_Z) {
+        if ((code == KeyEvent.VK_UP) || (code == KeyEvent.VK_Z)) {
             hautActiv = true;
         }
 
-        if (code == KeyEvent.VK_S) {
+        if ((code == KeyEvent.VK_DOWN) || (code == KeyEvent.VK_S)) {
             basActiv = true;
         }
     }
@@ -40,19 +40,19 @@ public class ToucheClavier implements KeyListener {// override auto les fonction
     public void keyReleased(KeyEvent keyEvent) {
         int code = keyEvent.getKeyCode();
 
-        if (code == KeyEvent.VK_Q) {
+        if ((code == KeyEvent.VK_LEFT) || (code == KeyEvent.VK_Q)) {
             gaucheActiv = false;
         }
 
-        if (code == KeyEvent.VK_D) {
+        if ((code == KeyEvent.VK_RIGHT) || (code == KeyEvent.VK_D)) {
             droitActiv = false;
         }
 
-        if (code == KeyEvent.VK_Z) {
+        if ((code == KeyEvent.VK_UP) || (code == KeyEvent.VK_Z)) {
             hautActiv = false;
         }
 
-        if (code == KeyEvent.VK_S) {
+        if ((code == KeyEvent.VK_DOWN) || (code == KeyEvent.VK_S)) {
             basActiv = false;
         }
     }
