@@ -1,7 +1,10 @@
 package Main;
 
-import javax.swing.*;
+import javax.swing.JPanel;
 import java.awt.*;
+
+import java.awt.Color;
+
 
 public class GamePanel extends JPanel implements Runnable{
     // SCREEN SETTINGS
@@ -18,12 +21,24 @@ public class GamePanel extends JPanel implements Runnable{
     private final int Hauteur = TailleCarreauGrille * AxeX; // 576 px
 
 
+    ToucheClavier touche =new ToucheClavier();
+
+    int AxeXPersonnage=100;
+
+    int AxeYPersonnage=100;
+
+    int VitessePersonnage=5;
+
     Thread ThreadJeu;
     public GamePanel() {
         this.setPreferredSize(new Dimension(Largeur,Hauteur));
         this.setBackground(Color.BLACK);
         this.setDoubleBuffered(true);
-        this.setFocusable(true);
+        this.addKeyListener(touche);
+        this.setFocusable(true); // pour que GamePanel recoit la touche
+
+
+
     }
 
 
@@ -35,8 +50,36 @@ public class GamePanel extends JPanel implements Runnable{
     public void run() {
         while(ThreadJeu!=null){
             System.out.println("boucle de jeu");
+            maj();
+            repaint();
 
         }
+
+    }
+    public void maj(){
+        if(touche.hautActiv==true){
+            AxeYPersonnage -= VitessePersonnage;
+        }
+        if(touche.basActiv==true){
+            AxeYPersonnage += VitessePersonnage;
+
+        }
+        if(touche.droitActiv==true){
+            AxeXPersonnage +=VitessePersonnage;
+
+        }
+        if(touche.gaucheActiv==true){
+            AxeXPersonnage-=VitessePersonnage;
+
+        }
+
+    }
+    public void paintComponent(Graphics g){
+        super.paintComponent(g);
+        Graphics2D graphics2D =(Graphics2D) g;
+        graphics2D.setColor(Color.red);
+        graphics2D.fillOval(AxeXPersonnage,AxeYPersonnage,TailleCareau,TailleCareau);
+        graphics2D.dispose();// libère ressources utilisées
 
     }
 }
