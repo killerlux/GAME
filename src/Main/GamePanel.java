@@ -1,5 +1,7 @@
 package Main;
 
+import Personnages.Joueur;
+
 import javax.swing.JPanel;
 import java.awt.*;
 
@@ -8,10 +10,10 @@ import java.awt.Color;
 
 public class GamePanel extends JPanel implements Runnable{
     // SCREEN SETTINGS
-    private final int TailleCareau = 16; // On choisit 16x16 car nous allons utiliser des images(personnages,objets) qui font cette taille là
+    public final int TailleCareau = 16; // On choisit 16x16 car nous allons utiliser des images(personnages,objets) qui font cette taille là
     private final int echelle = 4; // leur taille de 16 sera multipliée par echelle
 
-    private final int TailleCarreauGrille = TailleCareau * echelle; // la taille de chaque carreau de la grille sera de 16*4
+    public final int TailleCarreauGrille = TailleCareau * echelle; // la taille de chaque carreau de la grille sera de 16*4
     private final int AxeY = 18;
     private final int AxeX = 14;
 
@@ -28,13 +30,17 @@ public class GamePanel extends JPanel implements Runnable{
 
     ToucheClavier touche =new ToucheClavier();
 
+
+
     int AxeXPersonnage=100;
 
     int AxeYPersonnage=100;
 
     int VitessePersonnage=3;
 
+
     Thread ThreadJeu;
+    Joueur joueur = new Joueur (this,touche);
     public GamePanel() {
         this.setPreferredSize(new Dimension(Largeur,Hauteur));
         this.setBackground(Color.BLACK);
@@ -66,36 +72,23 @@ public class GamePanel extends JPanel implements Runnable{
             x+= (TempsActuel - dernierTempsCapture) / ecart;
             dernierTempsCapture=TempsActuel;
             if(1<=x){
-            maj();
-            repaint();
-            x--;
-        }
-
+                maj();
+                repaint();
+                x--;
+              }
     }
     }
     public void maj(){
-        if(touche.hautActiv==true){
-            AxeYPersonnage -= VitessePersonnage;
-        }
-        if(touche.basActiv==true){
-            AxeYPersonnage += VitessePersonnage;
+        joueur.maj();
 
-        }
-        if(touche.droitActiv==true){
-            AxeXPersonnage +=VitessePersonnage;
-
-        }
-        if(touche.gaucheActiv==true){
-            AxeXPersonnage-=VitessePersonnage;
-
-        }
 
     }
-    public void paintComponent(Graphics g){
-        super.paintComponent(g);
-        Graphics2D graphics2D =(Graphics2D) g;
-        graphics2D.setColor(Color.red);
-        graphics2D.fillRect(AxeXPersonnage,AxeYPersonnage,TailleCareau,TailleCareau);
+    public void paintComponent(Graphics Graph){
+        super.paintComponent(Graph);
+        Graphics2D graphics2D =(Graphics2D) Graph;
+        //graphics2D.setColor(Color.red);
+        //graphics2D.fillRect(AxeXPersonnage,AxeYPersonnage,TailleCareau,TailleCareau);
+        joueur.draw(graphics2D);
         graphics2D.dispose();// libère ressources utilisées
 
     }

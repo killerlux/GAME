@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f67524da-533a-468a-a9d7-89f4b9194672" name="Changes" comment="Mon oval bouge !!!!">
+    <list default="true" id="f67524da-533a-468a-a9d7-89f4b9194672" name="Changes" comment="Ajout touches flèches du clavier">
+      <change afterPath="$PROJECT_DIR$/Ressources/Joueur/bas1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ressources/Joueur/bas2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ressources/Joueur/droit1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ressources/Joueur/droit2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ressources/Joueur/gauche1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ressources/Joueur/gauche2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ressources/Joueur/haut1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ressources/Joueur/haut2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Personnages/Joueur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Personnages/Personnages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GAME.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GAME.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main/GamePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/GamePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/ToucheClavier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main/ToucheClavier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +47,19 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm"
+    "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "/home/aymen/POO2/Java/GAMEProJet/GAME/Ressources/Joueur",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Ressources/Joueur" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main.Main" />
@@ -66,7 +88,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667056646464</updated>
-      <workItem from="1667056647601" duration="10153000" />
+      <workItem from="1667056647601" duration="13273000" />
+      <workItem from="1667205492776" duration="4232000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1667056826896</created>
@@ -131,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667134752398</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Ajout touches flèches du clavier">
+      <created>1667135195730</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667135195730</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +186,7 @@
     <MESSAGE value="boucle de jeu fonctionnelle" />
     <MESSAGE value="touches de clavier début" />
     <MESSAGE value="Mon oval bouge !!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mon oval bouge !!!!" />
+    <MESSAGE value="Ajout touches flèches du clavier" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout touches flèches du clavier" />
   </component>
 </project>
